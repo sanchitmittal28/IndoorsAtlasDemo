@@ -12,9 +12,11 @@
 		75280DF820EA0E1800AA2514 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75280DF620EA0E1800AA2514 /* Main.storyboard */; };
 		75280DFA20EA0E1A00AA2514 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75280DF920EA0E1A00AA2514 /* Assets.xcassets */; };
 		75280DFD20EA0E1A00AA2514 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75280DFB20EA0E1A00AA2514 /* LaunchScreen.storyboard */; };
+		87584B36D7C1F5467F5B59C0 /* Pods_IndoorsAtlasDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9135B95A07D2FF86A90450DE /* Pods_IndoorsAtlasDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09A83D96A133E46437C3F409 /* Pods-IndoorsAtlasDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IndoorsAtlasDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IndoorsAtlasDemo/Pods-IndoorsAtlasDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		75280DEF20EA0E1800AA2514 /* IndoorsAtlasDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IndoorsAtlasDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75280DF220EA0E1800AA2514 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75280DF420EA0E1800AA2514 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		75280DF920EA0E1A00AA2514 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75280DFC20EA0E1A00AA2514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75280DFE20EA0E1A00AA2514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9135B95A07D2FF86A90450DE /* Pods_IndoorsAtlasDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IndoorsAtlasDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F23AA5374921543CCB3849B9 /* Pods-IndoorsAtlasDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IndoorsAtlasDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-IndoorsAtlasDemo/Pods-IndoorsAtlasDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87584B36D7C1F5467F5B59C0 /* Pods_IndoorsAtlasDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A0029162C5B542F50393739 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09A83D96A133E46437C3F409 /* Pods-IndoorsAtlasDemo.debug.xcconfig */,
+				F23AA5374921543CCB3849B9 /* Pods-IndoorsAtlasDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		75280DE620EA0E1800AA2514 = {
 			isa = PBXGroup;
 			children = (
 				75280DF120EA0E1800AA2514 /* IndoorsAtlasDemo */,
 				75280DF020EA0E1800AA2514 /* Products */,
+				3A0029162C5B542F50393739 /* Pods */,
+				804837765190581EBAEB585A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = IndoorsAtlasDemo;
 			sourceTree = "<group>";
 		};
+		804837765190581EBAEB585A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9135B95A07D2FF86A90450DE /* Pods_IndoorsAtlasDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75280E0120EA0E1A00AA2514 /* Build configuration list for PBXNativeTarget "IndoorsAtlasDemo" */;
 			buildPhases = (
+				9EC84721D610591CC4A0FCEA /* [CP] Check Pods Manifest.lock */,
 				75280DEB20EA0E1800AA2514 /* Sources */,
 				75280DEC20EA0E1800AA2514 /* Frameworks */,
 				75280DED20EA0E1800AA2514 /* Resources */,
+				48DC8B0FCD0CCABAF8D90D3D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48DC8B0FCD0CCABAF8D90D3D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IndoorsAtlasDemo/Pods-IndoorsAtlasDemo-frameworks.sh",
+				"${PODS_ROOT}/IndoorAtlas/indooratlas-ios-sdk/IndoorAtlas.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IndoorAtlas.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IndoorsAtlasDemo/Pods-IndoorsAtlasDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EC84721D610591CC4A0FCEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IndoorsAtlasDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		75280DEB20EA0E1800AA2514 /* Sources */ = {
@@ -197,6 +262,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -257,6 +323,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -278,17 +345,20 @@
 		};
 		75280E0220EA0E1A00AA2514 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09A83D96A133E46437C3F409 /* Pods-IndoorsAtlasDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 9AS4EHAHJD;
 				INFOPLIST_FILE = IndoorsAtlasDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.IndoorsAtlasDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hcs.IndoorsAtlasDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b6923ea3-7133-4354-b584-a9603f100653";
+				PROVISIONING_PROFILE_SPECIFIER = "Sanchit Mittal Prov Profile";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -296,17 +366,19 @@
 		};
 		75280E0320EA0E1A00AA2514 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F23AA5374921543CCB3849B9 /* Pods-IndoorsAtlasDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9AS4EHAHJD;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = IndoorsAtlasDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.IndoorsAtlasDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hcs.IndoorsAtlasDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
